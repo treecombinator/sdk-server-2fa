@@ -1,7 +1,6 @@
 import { defineConfig } from "tsup";
 
-// One entry. @treecombinator/sdk-core stays external (tsup externalizes deps).
-// Portable dual ESM + CJS + type declarations.
+// One entry, no dependencies. Portable dual ESM + CJS + type declarations.
 export default defineConfig({
   entry: ["src/index.ts"],
   format: ["esm", "cjs"],
